@@ -1,6 +1,6 @@
 
 
-# High-Performance Java Web Server
+# Scalable WebServer
 
 A robust, high-performance Java-based web server designed to efficiently manage **60k+ concurrent requests**. This project showcases multiple server architectures with different threading models, including **Single-Threaded**, **Multi-Threaded**, and **Thread Pool** implementations, to ensure scalability and optimal performance.
 
