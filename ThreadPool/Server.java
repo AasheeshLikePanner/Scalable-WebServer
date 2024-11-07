@@ -7,14 +7,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Server {
     private final ExecutorService threadPool;
     
-    private HashMap<String, String> cache = new HashMap<>();
+    private ConcurrentHashMap<String, String> cache = new ConcurrentHashMap<>();
 
     public String getCachedContent(String filePath) throws IOException {
         if (cache.containsKey(filePath)) {
@@ -69,7 +69,7 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        int port = 8010;
+        int port = 8080;
         int poolSize = 10;
         Server server = new Server(poolSize);
 
