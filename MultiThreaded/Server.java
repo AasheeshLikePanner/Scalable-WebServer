@@ -8,14 +8,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
 public class Server {
 
     private static Server server;
     
-    private HashMap<String, String> cache = new HashMap<>();
+    private ConcurrentHashMap<String, String> cache = new ConcurrentHashMap<>();
 
     public String getCachedContent(String filePath) throws IOException {
         if (cache.containsKey(filePath)) {
