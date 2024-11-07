@@ -1,0 +1,46 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faa4a4; /* Light gray background */
+    color: #333; /* Dark text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Heading (h1) styling */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark color for heading */
+    margin-bottom: 20px;
+}
+
+/* Paragraph (p) styling */
+p {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Lighter gray text color */
+}
+
+/* Add a hover effect to the body */
+body:hover {
+    background-color: #e0e0e0; /* Light hover effect */
+}
